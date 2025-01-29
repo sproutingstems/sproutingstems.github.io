@@ -1,5 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprouting Stems</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /*
+        Woops I need to fix this
+        @font-face{ 
+            font-family: 'Quicksand';
+            src: url('Quicksand.woff2') format('woff2'), url('Quicksand.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }*/
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #dcdcdc; /*HEADER color*/
+            padding: 0px 20px; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px; /*gap in between "Home, About"...*/
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(0, 0, 0); /*this is the color of the text on the right "Home, about, get involved"*/
+            padding: 25px 20px;
+            transition: background .3s; /*How long the background color lingers for*/
+        }
+        .nav-links a:hover {
+            background: grey; /*when you hover it turns to this color CHANGE later*/
+            color: white;
+        }
+    </style>
+</head>
 <body>
     <header>
         <div class="logo"> 
