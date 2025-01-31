@@ -1,75 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sprouting Stems</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sprouting Stems</title>
 <style>
-  /*
-  Woops I need to fix this
-  @font-face{ 
-      font-family: 'Quicksand';
-      src: url('Quicksand.woff2') format('woff2'), url('Quicksand.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }*/
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
-    header {
-        background: #dcdcdc; /*HEADER color*/
-        padding: 0px 20px; 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .logo {
-        display: flex;
-        align-items: center;
-    }
-    .logo img {
-        height: 50px;
-        margin-right: 10px;
-    }
-    .nav-links {
-        display: flex;
-        gap: 0px; /*gap in between "Home, About"...*/
-    }
-    .nav-links a {
-        text-decoration: none;
-        color: rgb(0, 0, 0); /*this is the color of the text on the right "Home, about, get involved"*/
-        padding: 20px 25px;
-        width: 100px; /*How big the boxes are*/
-        text-align: center;
-        transition: background .3s; /*How long the background color lingers for*/
-  
-    }
-    .nav-links a:hover {
-        background: grey; /*when you hover it turns to this color CHANGE later*/
-        color: white;
-    }
- 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background: #dcdcdc;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 0 25px;  /* Only horizontal padding */
+    height: 60px;  /* Match header height */
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Center the text */
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: rgb(160, 158, 158);
+    color: white;
+}
+
+.image-container{
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+}
+.image-container img{
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 30px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.Who{
+  font-family:'Arial';
+  font-size:50px;
+  text-align:center;
+  color: rgb(38, 83, 38);
+  margin-top:8px;
+  margin-bottom:0;
+}
+.who_text{
+  font-family:'Arial';
+  font-size:30ox;
+  text-align:center;
+  margin-top:5px;
+}
 </style>
 </head>
 <body>
 <header>
-    <div class="logo"> 
-        <img src="logo.png" alt="Sprouting Stems Logo">
-        <span>Sprouting Stems</span>
-    </div>
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="get-involved.html">Get Involved</a>
-        <a href="donate.html">Donate</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    
+<div class="logo"> 
+    <img src="logo.png" alt="Sprouting Stems Logo">
+    <span>Sprouting Stems</span>
+</div>
+<nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+</nav>
 </header>
-<img src = "green.png" alt = "Place holder image"width = 100% height = 200px>
 
-<script src="script.js"></script>
+<!-- Image with overlay -->
+<div class="image-container">
+<img src="green.png" alt="Image Placeholder">
+<div class="overlay-text">SLAY</div>
+</div>
+<p class = "Who">
+  Who We Are
+</p>
+<p class = "who_text">
+  INPUT text -heh-
+</p>
 </body>
 </html>
